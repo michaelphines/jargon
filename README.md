@@ -1,23 +1,28 @@
-## jargon
+# It's Flavor Country Out There
 
-To publish on [jargon](http://jargon.io), just fork this repo and check your Markdown articles into the `/articles` directory. We'll automatically detect your checkins and publish your content.
+There is nothing like authentic. Nothing beats the real thing. Cars can’t fake fast, guitars can’t fake rock and roll, and no one can fake the feel-good flavors of American cuisine.
 
-### Extended Markdown
+Guy Fieri is one of the hottest celebrity chefs on the scene. In Guy’s Food Network series, Diners, Drive-Ins, and Dives, he tastes his way across the back roads of America gathering eclectic and savory inspiration along the way. This first-hand knowledge of American comfort food gone wild fuels the menu at Guy’s American Kitchen & Bar.
 
-Jargon supports an extended version of [GitHub-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). In addition to normal fenced code blocks, you can also reference code files stored in your `/snippets` directory.
+```ruby
+class GithubPubsub
+  attr_reader :repo_path
 
-This will embed the file `foo.rb` stored in the `/snippets` folder.
+  def initialize(repo_path)
+    @repo_path = repo_path
+  end
 
+  def subscribe(event)
+    send_request('subscribe', event)
+  end
+
+  def unsubscribe(event)
+    send_request('unsubscribe', event)
+  end
+end
 ```
-[snippet: foo.rb]
-```
 
-This will embed lines 18-24 from the file `foo.rb` stored in the `/snippets` folder.
+This dynamic restaurant features Guy’s signature style of cooking, big on flavor and short on boundaries. Guy Fieri packs classic American cuisine with unexpected flavor; food done right and sometimes in a way you never thought possible. Simply put, Guy’s American Kitchen & Bar allows hometown favorites and culinary expertise to satisfy the bold flavor cravings of visitors, fans and insatiable New Yorkers.
 
-```
-[snippet: foo.rb:18,24]
-```
+Guy says, “I’ve lived my life by the motto ‘Go Big or Go Home’ so when it came time to get cookin’ in New York City, I couldn’t think of any better place than right in the heart of it all, Times Square. Great food and good times, that’s what this place is all about.”
 
-### Tags
-
-We'll automatically detect which languages you use in your posts and add a tag for each one. You can also manually add tags with the `[tag: ]`... tag. You can find an example [here](https://github.com/jargon-io/jargon/blob/master/articles/example.md).
