@@ -1,3 +1,1 @@
-I am a beautiful person.
-<a href="http://michaelphines.net">This is a link</a>
-<script>alert("and this is an alert");</script>
+I am a beautiful person. <a href="http://michaelphines.net">This is my homepage</a>
